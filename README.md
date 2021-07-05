@@ -16,7 +16,7 @@
 
 ## <h2 style="text-align:center" id="purpose">Purpose</h2>
 
-This app contains a timed quiz on the toppic of coding.  Multiple choice questions are presented to the user one at a time. A correctly answered question is rewarded with points and an incorrect question incurrs a time penalty. The final score can be added to a high scores board which uses local memory to retain the information for the user. 
+This app contains a timed quiz on the topic of coding.  Multiple choice questions are presented to the user one at a time. A correctly answered question is rewarded with points and an incorrect question incurrs a time penalty. The final score can be added to a high scores board which uses local memory to retain the information for the user. 
 Building this website helped to consolidate skills and knowledge needed to use timer functions, forms with radio buttons, program objects to display items at different times, to tally and display a score and render it in local memory so that it can be retrieved. 
 As a result of this work I have learnt and refined the use of basic web design techniques as well as how to use local memory and ......
 
