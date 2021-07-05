@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Quiz</title>
-  <link rel ="stylesheet" href ="../Assets/css/reset.css"/>
-  <link rel ="stylesheet" href ="../Assets/css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../Assets/css/style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
-
-  <script defer src="../Assets/js/script2.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Code Quiz</title>
 </head>
 
-
 <body>
-  <header>
-    <h1>Coding Quiz Challenge</h1>
+    <header>
+    <div id="heading">
+        <h1>Coding Quiz Challenge</h1>
+    </div>
   </header>
-  
-  <section id="infoBar">
-      <div class="highScores">
-        <button id="hsButton">High Scores</button>
-      </div>
-      <div class="timer" id ="counter">time left: </div>
-  </section>
-  <div class="subHeading">
-    <h2>Take the quiz and test your coding knowledge</h2>
-  </div>
+    <!-- Display high score and timer on top left and right corners respectively -->
+    <section id="infoBar">
+        <section id="score_keeper" class="scoreDisplay">
+            <input type="button" value="View High Scores" onclick="view_high_scores()" id="hsButton"></br>
+            Score: <var id="score"> </var>
+        </section>
+        <section id="countdownTimer">
+            Time Left: <span id="timer"></span>
+        </section>
+    </section>
 
-  <main>
-    <main>
-        
-      <div id="quizcardContainer">
-      <button id="startButton" class="button">Start</button>
-      <button id="nextButton">Next Question</button>   
-      <button id="submit">Submit Quiz</button>
-      <div id="results"></div>
-    
-    </div>  
-  </main>
-  </main>
+    <!-- Home Container with quiz rules and Start button -->
+    <container>
+    <div id="homeContainer">
+        <h2>Take the quiz and test your coding knowledge</h2>
+        <br>
+        <button id="startBtn">Start Quiz</button>
+    </div>
+    </container>
 
-
- <footer>
-<h5>Online Games by LizzyA </h5>
- </footer>
+        <!-- QUIZ CONTAINER -->
+        <div id="quizContainer" style="display: none"> 
+            <h2 id="questionHeading"></h2>
+            <!-- <div id="answerChoices"> -->
+                <ul>
+                    <div id="choices">
+                        <button id="answerChoiceA"></button>
+                    </div>
+                    <div>
+                        <button id="answerChoiceB"></button>
+                    </div>
+                    <div>
+                        <button id="answerChoiceC"></button>
+                    </div>
+                    <div>
+                        <button id="answerChoiceD"></button>
+                    </div>
+                </ul>
+            </div>
 </body>
-</html>
+
+<!-- RESULTS & HIGH SCORES CONTAINER -->
+<section id="AnswerResponse">
+</section>
+
+<div id= "game_over" style="display: none">
+    <h2> Game Over</h2>
+    <p>Your Score was:  </p> <var id="end_score"> </var>
+    </br>
+    <p>Enter your initials: </p><input type="text"  value="" id="initials">
+    </br>
+    <input type="button" value="submit" class="button" id="submit_intials" onclick="submit_score()">
+</div>
+
+<div id="high_scores_page" style="display: none" >
+    <h2> High Scores </h2>
+    <div id="high_scores"></div>
+        <input type="button" value="Play Again" class="button" id="go_back" onclick="go_home()">
+        <input type="button" id="Clear Highscores" class="button" value ="clear high scores" onclick="clear_hs()">
+    </div>
+
+<footer>
+        <h5>Online Games by LizzyA </h5>
+</footer>
+
+    <script src="../Assets/js/script.js"></script>
+
+</html> 
