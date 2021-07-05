@@ -43,6 +43,10 @@ This project can be viewed at [Coding Quiz](https://lallender.github.io/codeQuiz
 
 It should appear like this:
 
+![Screenshot 1 codequiz](https://user-images.githubusercontent.com/83952257/124492825-4ee21780-ddf8-11eb-9d72-5011bb9b5e5b.png)
+![Screenshot 2 codequiz](https://user-images.githubusercontent.com/83952257/124492834-52759e80-ddf8-11eb-9e47-467002ad0bcc.png)
+![Screenshot 3 codequiz](https://user-images.githubusercontent.com/83952257/124492847-54d7f880-ddf8-11eb-819b-caa318e3cba7.png)
+
 
 
 
